@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
+import javafx.scene.layout.VBox;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,8 +15,13 @@ import java.io.InputStream;
 public class MainController {
 
     private final StringBuilder message = new StringBuilder();
+
+    @FXML
+    public VBox root;
+
     @FXML
     private Label dragFileArea;
+
     @FXML
     private TextArea textArea;
 
